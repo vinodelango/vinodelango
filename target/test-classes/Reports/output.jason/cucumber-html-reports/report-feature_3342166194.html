@@ -1,0 +1,2414 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: verifying adactin details</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Adactin automation</td>
+      <td>08 Dec 2021, 20:44</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">verifying adactin details</td>
+          <td      class="passed"    >59</td>
+          <td      class="failed"    >1</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">60</td>
+
+          <td  class="passed"    >9</td>
+          <td  class="failed"    >1</td>
+          <td class="total">10</td>
+
+          <td class="duration" data-value="149988497600">2:29.988</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">verifying adactin details</span>
+
+
+</div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">24.888</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Booking hotels with adactin web portal</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">user is on the adatctin page</span>
+
+  <span class="lead-duration duration">9.077</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user should login with valid <span class="argument">&quot;vinodelango&quot;</span> and <span class="argument">&quot;kingmaker&quot;</span></span>
+
+  <span class="lead-duration duration">3.850</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user should search hotels <span class="argument">&quot;Melbourne&quot;</span>,<span class="argument">&quot;Hotel Sunshine&quot;</span>,<span class="argument">&quot;Double&quot;</span>,<span class="argument">&quot;1 - One&quot;</span>,<span class="argument">&quot;05/12/2021&quot;</span>,<span class="argument">&quot;06/12/2021&quot;</span>,<span class="argument">&quot;1 - One&quot;</span>,<span class="argument">&quot;1 - One&quot;</span> and click search</span>
+
+  <span class="lead-duration duration">3.791</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user should select the hotel and click continue</span>
+
+  <span class="lead-duration duration">0.677</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user shoud enter the <span class="argument">&quot;vinod&quot;</span>,<span class="argument">&quot;elangovan&quot;</span>,<span class="argument">&quot;madambakkam&quot;</span>,<span class="argument">&quot;4616800006561245&quot;</span>,<span class="argument">&quot;VISA&quot;</span>,<span class="argument">&quot;February&quot;</span><span class="argument">&quot;2022&quot;</span>,<span class="argument">&quot;245&quot;</span>and should click booknow</span>
+
+  <span class="lead-duration duration">0.840</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user should print the generated orderid</span>
+
+  <span class="lead-duration duration">6.651</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">13.270</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Booking hotels with adactin web portal</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">user is on the adatctin page</span>
+
+  <span class="lead-duration duration">3.745</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user should login with valid <span class="argument">&quot;vinodelango&quot;</span> and <span class="argument">&quot;kingmaker&quot;</span></span>
+
+  <span class="lead-duration duration">0.919</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user should search hotels <span class="argument">&quot;Melbourne&quot;</span>,<span class="argument">&quot;Hotel Sunshine&quot;</span>,<span class="argument">&quot;Double&quot;</span>,<span class="argument">&quot;1 - One&quot;</span>,<span class="argument">&quot;05/12/2021&quot;</span>,<span class="argument">&quot;06/12/2021&quot;</span>,<span class="argument">&quot;1 - One&quot;</span>,<span class="argument">&quot;1 - One&quot;</span> and click search</span>
+
+  <span class="lead-duration duration">1.441</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user should select the hotel and click continue</span>
+
+  <span class="lead-duration duration">0.568</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user shoud enter the <span class="argument">&quot;vinod&quot;</span>,<span class="argument">&quot;elangovan&quot;</span>,<span class="argument">&quot;madambakkam&quot;</span>,<span class="argument">&quot;4616800006561245&quot;</span>,<span class="argument">&quot;VISA&quot;</span>,<span class="argument">&quot;February&quot;</span><span class="argument">&quot;2022&quot;</span>,<span class="argument">&quot;245&quot;</span>and should click booknow</span>
+
+  <span class="lead-duration duration">0.972</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user should print the generated orderid</span>
+
+  <span class="lead-duration duration">5.623</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">13.169</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Booking hotels with adactin web portal</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">user is on the adatctin page</span>
+
+  <span class="lead-duration duration">3.491</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user should login with valid <span class="argument">&quot;vinodelango&quot;</span> and <span class="argument">&quot;kingmaker&quot;</span></span>
+
+  <span class="lead-duration duration">0.818</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user should search hotels <span class="argument">&quot;Melbourne&quot;</span>,<span class="argument">&quot;Hotel Sunshine&quot;</span>,<span class="argument">&quot;Double&quot;</span>,<span class="argument">&quot;1 - One&quot;</span>,<span class="argument">&quot;05/12/2021&quot;</span>,<span class="argument">&quot;06/12/2021&quot;</span>,<span class="argument">&quot;1 - One&quot;</span>,<span class="argument">&quot;1 - One&quot;</span> and click search</span>
+
+  <span class="lead-duration duration">1.345</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user should select the hotel and click continue</span>
+
+  <span class="lead-duration duration">1.212</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user shoud enter the <span class="argument">&quot;vinod&quot;</span>,<span class="argument">&quot;elangovan&quot;</span>,<span class="argument">&quot;madambakkam&quot;</span>,<span class="argument">&quot;4616800006561245&quot;</span>,<span class="argument">&quot;VISA&quot;</span>,<span class="argument">&quot;February&quot;</span><span class="argument">&quot;2022&quot;</span>,<span class="argument">&quot;245&quot;</span>and should click booknow</span>
+
+  <span class="lead-duration duration">0.945</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user should print the generated orderid</span>
+
+  <span class="lead-duration duration">5.356</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">13.720</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Booking hotels with adactin web portal</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">user is on the adatctin page</span>
+
+  <span class="lead-duration duration">3.462</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user should login with valid <span class="argument">&quot;vinodelango&quot;</span> and <span class="argument">&quot;kingmaker&quot;</span></span>
+
+  <span class="lead-duration duration">0.930</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user should search hotels <span class="argument">&quot;Melbourne&quot;</span>,<span class="argument">&quot;Hotel Sunshine&quot;</span>,<span class="argument">&quot;Double&quot;</span>,<span class="argument">&quot;1 - One&quot;</span>,<span class="argument">&quot;05/12/2021&quot;</span>,<span class="argument">&quot;06/12/2021&quot;</span>,<span class="argument">&quot;1 - One&quot;</span>,<span class="argument">&quot;1 - One&quot;</span> and click search</span>
+
+  <span class="lead-duration duration">1.427</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user should select the hotel and click continue</span>
+
+  <span class="lead-duration duration">0.600</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user shoud enter the <span class="argument">&quot;vinod&quot;</span>,<span class="argument">&quot;elangovan&quot;</span>,<span class="argument">&quot;madambakkam&quot;</span>,<span class="argument">&quot;4616800006561245&quot;</span>,<span class="argument">&quot;VISA&quot;</span>,<span class="argument">&quot;February&quot;</span><span class="argument">&quot;2022&quot;</span>,<span class="argument">&quot;245&quot;</span>and should click booknow</span>
+
+  <span class="lead-duration duration">0.996</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user should print the generated orderid</span>
+
+  <span class="lead-duration duration">6.302</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">12.764</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Booking hotels with adactin web portal</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">user is on the adatctin page</span>
+
+  <span class="lead-duration duration">3.586</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user should login with valid <span class="argument">&quot;vinodelango&quot;</span> and <span class="argument">&quot;kingmaker&quot;</span></span>
+
+  <span class="lead-duration duration">0.924</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user should search hotels <span class="argument">&quot;Melbourne&quot;</span>,<span class="argument">&quot;Hotel Sunshine&quot;</span>,<span class="argument">&quot;Double&quot;</span>,<span class="argument">&quot;1 - One&quot;</span>,<span class="argument">&quot;05/12/2021&quot;</span>,<span class="argument">&quot;06/12/2021&quot;</span>,<span class="argument">&quot;1 - One&quot;</span>,<span class="argument">&quot;1 - One&quot;</span> and click search</span>
+
+  <span class="lead-duration duration">1.362</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user should select the hotel and click continue</span>
+
+  <span class="lead-duration duration">0.601</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user shoud enter the <span class="argument">&quot;vinod&quot;</span>,<span class="argument">&quot;elangovan&quot;</span>,<span class="argument">&quot;madambakkam&quot;</span>,<span class="argument">&quot;4616800006561245&quot;</span>,<span class="argument">&quot;VISA&quot;</span>,<span class="argument">&quot;February&quot;</span><span class="argument">&quot;2022&quot;</span>,<span class="argument">&quot;245&quot;</span>and should click booknow</span>
+
+  <span class="lead-duration duration">0.903</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user should print the generated orderid</span>
+
+  <span class="lead-duration duration">5.385</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">13.384</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Booking hotels with adactin web portal</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">user is on the adatctin page</span>
+
+  <span class="lead-duration duration">3.791</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user should login with valid <span class="argument">&quot;vinodelango&quot;</span> and <span class="argument">&quot;kingmaker&quot;</span></span>
+
+  <span class="lead-duration duration">0.994</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user should search hotels <span class="argument">&quot;Melbourne&quot;</span>,<span class="argument">&quot;Hotel Sunshine&quot;</span>,<span class="argument">&quot;Double&quot;</span>,<span class="argument">&quot;1 - One&quot;</span>,<span class="argument">&quot;05/12/2021&quot;</span>,<span class="argument">&quot;06/12/2021&quot;</span>,<span class="argument">&quot;1 - One&quot;</span>,<span class="argument">&quot;1 - One&quot;</span> and click search</span>
+
+  <span class="lead-duration duration">1.650</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user should select the hotel and click continue</span>
+
+  <span class="lead-duration duration">0.548</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user shoud enter the <span class="argument">&quot;vinod&quot;</span>,<span class="argument">&quot;elangovan&quot;</span>,<span class="argument">&quot;madambakkam&quot;</span>,<span class="argument">&quot;4616800006561245&quot;</span>,<span class="argument">&quot;VISA&quot;</span>,<span class="argument">&quot;February&quot;</span><span class="argument">&quot;2022&quot;</span>,<span class="argument">&quot;245&quot;</span>and should click booknow</span>
+
+  <span class="lead-duration duration">1.021</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user should print the generated orderid</span>
+
+  <span class="lead-duration duration">5.376</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">14.097</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Booking hotels with adactin web portal</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">user is on the adatctin page</span>
+
+  <span class="lead-duration duration">3.813</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user should login with valid <span class="argument">&quot;vinodelango&quot;</span> and <span class="argument">&quot;kingmaker&quot;</span></span>
+
+  <span class="lead-duration duration">0.811</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user should search hotels <span class="argument">&quot;Melbourne&quot;</span>,<span class="argument">&quot;Hotel Sunshine&quot;</span>,<span class="argument">&quot;Double&quot;</span>,<span class="argument">&quot;1 - One&quot;</span>,<span class="argument">&quot;05/12/2021&quot;</span>,<span class="argument">&quot;06/12/2021&quot;</span>,<span class="argument">&quot;1 - One&quot;</span>,<span class="argument">&quot;1 - One&quot;</span> and click search</span>
+
+  <span class="lead-duration duration">2.023</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user should select the hotel and click continue</span>
+
+  <span class="lead-duration duration">0.636</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user shoud enter the <span class="argument">&quot;vinod&quot;</span>,<span class="argument">&quot;elangovan&quot;</span>,<span class="argument">&quot;madambakkam&quot;</span>,<span class="argument">&quot;4616800006561245&quot;</span>,<span class="argument">&quot;VISA&quot;</span>,<span class="argument">&quot;February&quot;</span><span class="argument">&quot;2022&quot;</span>,<span class="argument">&quot;245&quot;</span>and should click booknow</span>
+
+  <span class="lead-duration duration">0.975</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user should print the generated orderid</span>
+
+  <span class="lead-duration duration">5.837</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">14.124</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Booking hotels with adactin web portal</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-15" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-16" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">user is on the adatctin page</span>
+
+  <span class="lead-duration duration">3.565</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user should login with valid <span class="argument">&quot;vinodelango&quot;</span> and <span class="argument">&quot;kingmaker&quot;</span></span>
+
+  <span class="lead-duration duration">1.185</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user should search hotels <span class="argument">&quot;Melbourne&quot;</span>,<span class="argument">&quot;Hotel Sunshine&quot;</span>,<span class="argument">&quot;Double&quot;</span>,<span class="argument">&quot;1 - One&quot;</span>,<span class="argument">&quot;05/12/2021&quot;</span>,<span class="argument">&quot;06/12/2021&quot;</span>,<span class="argument">&quot;1 - One&quot;</span>,<span class="argument">&quot;1 - One&quot;</span> and click search</span>
+
+  <span class="lead-duration duration">1.943</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user should select the hotel and click continue</span>
+
+  <span class="lead-duration duration">0.709</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user shoud enter the <span class="argument">&quot;vinod&quot;</span>,<span class="argument">&quot;elangovan&quot;</span>,<span class="argument">&quot;madambakkam&quot;</span>,<span class="argument">&quot;4616800006561245&quot;</span>,<span class="argument">&quot;VISA&quot;</span>,<span class="argument">&quot;February&quot;</span><span class="argument">&quot;2022&quot;</span>,<span class="argument">&quot;245&quot;</span>and should click booknow</span>
+
+  <span class="lead-duration duration">0.933</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user should print the generated orderid</span>
+
+  <span class="lead-duration duration">5.787</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">13.717</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Booking hotels with adactin web portal</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">user is on the adatctin page</span>
+
+  <span class="lead-duration duration">3.802</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user should login with valid <span class="argument">&quot;vinodelango&quot;</span> and <span class="argument">&quot;kingmaker&quot;</span></span>
+
+  <span class="lead-duration duration">1.108</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user should search hotels <span class="argument">&quot;Melbourne&quot;</span>,<span class="argument">&quot;Hotel Sunshine&quot;</span>,<span class="argument">&quot;Double&quot;</span>,<span class="argument">&quot;1 - One&quot;</span>,<span class="argument">&quot;05/12/2021&quot;</span>,<span class="argument">&quot;06/12/2021&quot;</span>,<span class="argument">&quot;1 - One&quot;</span>,<span class="argument">&quot;1 - One&quot;</span> and click search</span>
+
+  <span class="lead-duration duration">1.654</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user should select the hotel and click continue</span>
+
+  <span class="lead-duration duration">0.570</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user shoud enter the <span class="argument">&quot;vinod&quot;</span>,<span class="argument">&quot;elangovan&quot;</span>,<span class="argument">&quot;madambakkam&quot;</span>,<span class="argument">&quot;4616800006561245&quot;</span>,<span class="argument">&quot;VISA&quot;</span>,<span class="argument">&quot;February&quot;</span><span class="argument">&quot;2022&quot;</span>,<span class="argument">&quot;245&quot;</span>and should click booknow</span>
+
+  <span class="lead-duration duration">0.929</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user should print the generated orderid</span>
+
+  <span class="lead-duration duration">5.651</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">16.850</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-19">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Booking hotels with adactin web portal</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-20">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">user is on the adatctin page</span>
+
+  <span class="lead-duration duration">3.764</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user should login with valid <span class="argument">&quot;vinodelango&quot;</span> and <span class="argument">&quot;kingmaker&quot;</span></span>
+
+  <span class="lead-duration duration">0.915</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user should search hotels <span class="argument">&quot;Melbourne&quot;</span>,<span class="argument">&quot;Hotel Sunshine&quot;</span>,<span class="argument">&quot;Double&quot;</span>,<span class="argument">&quot;1 - One&quot;</span>,<span class="argument">&quot;05/12/2021&quot;</span>,<span class="argument">&quot;06/12/2021&quot;</span>,<span class="argument">&quot;1 - One&quot;</span>,<span class="argument">&quot;1 - One&quot;</span> and click search</span>
+
+  <span class="lead-duration duration">1.412</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user should select the hotel and click continue</span>
+
+  <span class="lead-duration duration">0.612</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user shoud enter the <span class="argument">&quot;vinod&quot;</span>,<span class="argument">&quot;elangovan&quot;</span>,<span class="argument">&quot;madambakkam&quot;</span>,<span class="argument">&quot;4616800006561245&quot;</span>,<span class="argument">&quot;VISA&quot;</span>,<span class="argument">&quot;February&quot;</span><span class="argument">&quot;2022&quot;</span>,<span class="argument">&quot;245&quot;</span>and should click booknow</span>
+
+  <span class="lead-duration duration">0.965</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user should print the generated orderid</span>
+
+  <span class="lead-duration duration">9.180</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-21">
+          <a>org.openqa.selenium.WebDriverException:</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=96.0.4664.45)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2TJ5HH4', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\VINODE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61195}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b7266d4f58ee0727465a08c663dc2ba9
+*** Element info: {Using=id, value=order_no}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.loginsteps.Stepdefinitions.user_should_print_the_generated_orderid(Stepdefinitions.java:96)
+	at &#10045;.user should print the generated orderid(src/test/resources/Features/adactinLogin.feature:10)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
